@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Dale's Vending Machine</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Vending Machine</h1>
+      <hr/>
+      <div class="row">
+
+          <div id="displayItems" class="row col-8">
+            <!--items displayed here-->
+          </div>
+
+        <div id="displayControls" class="col-4">
+          <div class="row">
+              <div class="row m-auto">
+                <form id="displayMoney">
+                  <div class="row m-auto">Total $ In</div>
+                  <input class="form-control" type="text" id="moneyInput" value = "0.00" placeholder="0.00" readonly>
+                </form>
+              </div>
+                <div class="row m-auto">
+                  <button type="button" id="addDollar">Add Dollar</button>
+                  <button type="button" id="addQuarter">Add Quarter</button>
+                </div>
+                <div class="row m-auto">
+                  <button type="button" id="addDime">Add Dime</button>
+                  <button type="button" id="addNickel">Add Nickel</button>
+                </div>
+              </hr>
+          </div>
+          <div class="row">
+            <form id="displayMessages">
+              <div class="row m-auto">Messages</div>
+              <input class="form-control" type="text" id="messageInput" value = "" readonly>
+            </form>
+            <form id="displayItemSelection">
+              <div class="row m-auto">Item</div>
+              <input class="form-control" type="text" id="itemSelection" value="" readonly>
+            </form>
+            <button type="button" id="purchaseItem">Make Purchase</button>
+          </hr>
+          </div>
+          <div class="row">
+            <form id="displayChange">
+              <div class="row m-auto">Change</div>
+              <input class="form-control" type="text" id="changeInput" value = "" placeholder="" readonly>
+            </form>
+            <button type="button" id="returnChange">Return Change</button>
+          </hr>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/home.js"></script>
+    </body>
+    </html>
